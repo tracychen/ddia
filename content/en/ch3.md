@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch3
 title: "3. Data Models and Query Languages"
 weight: 103
 breadcrumbs: false

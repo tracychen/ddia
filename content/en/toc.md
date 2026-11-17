@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-toc
 title: "Table of Content"
 linkTitle: "Table of Content"
 weight: 10

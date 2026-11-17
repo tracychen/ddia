@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-glossary
 title: Glossary
 weight: 500
 breadcrumbs: false

@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch6
 title: "6. Replication"
 weight: 206
 breadcrumbs: false

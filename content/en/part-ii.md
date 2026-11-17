@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-part-ii
 title: "PART II: Distributed Data"
 weight: 200
 breadcrumbs: false

@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch8
 title: "8. Transactions"
 weight: 208
 breadcrumbs: false

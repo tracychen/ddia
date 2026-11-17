@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch5
 title: "5. Encoding and Evolution"
 weight: 105
 breadcrumbs: false

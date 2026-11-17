@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-part-iii
 title: "PART III: Derived Data"
 weight: 300
 breadcrumbs: false

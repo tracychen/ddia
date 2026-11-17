@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch2
 title: "2. Defining Nonfunctional Requirements"
 weight: 102
 breadcrumbs: false

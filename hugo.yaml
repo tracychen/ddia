@@ -301,6 +301,75 @@ languages:
           pageRef: /contrib
           weight: 20
           params: { icon: fa-solid fa-code-pull-request }
+  en:
+    label: English · 2nd
+    locale: en-US
+    contentDir: content/en
+    weight: 5
+    title: Designing Data-Intensive Applications 2
+    params:
+      description: Designing Data-Intensive Applications, 2nd Edition — data models, storage, transactions, distributed systems, batch and stream processing.
+      version: v2
+      version_menu: 2nd Edition
+      versions:
+        - { name: 2nd Edition, version: v2, url: '/en/' }
+      # The English manuscript is not a translation; keep it out of the
+      # translation's giscus threads.
+      comments:
+        enable: false
+      time_format_default: '2006-01-02'
+      ui:
+        command_palette:
+          commands:
+            - id: start_reading
+              title: Start reading from Chapter 1
+              description: Open Chapter 1, "Trade-offs in Data Systems Architecture"
+              url: /ch1/
+              icon: fa-solid fa-book-open
+              keywords: [start, read, chapter 1]
+            - id: browse_glossary
+              title: Browse the glossary
+              description: Look up data systems terms used in the book
+              url: /glossary/
+              icon: fa-solid fa-spell-check
+              keywords: [glossary, terms, definitions]
+            - id: print_book
+              title: Print the whole book
+              description: Open the whole-book print view, which can be saved as PDF
+              url: /_print/
+              icon: fa-solid fa-print
+              keywords: [book, print, PDF]
+    menus:
+      main:
+        - identifier: read
+          name: Read
+          pageRef: /toc
+          weight: 10
+          params: { icon: fa-solid fa-book-open }
+        - identifier: toc
+          parent: read
+          name: Table of Contents
+          pageRef: /toc
+          weight: 10
+          params: { icon: fa-solid fa-list, description: Browse the fourteen chapters and three parts }
+        - identifier: glossary
+          parent: read
+          name: Glossary
+          pageRef: /glossary
+          weight: 20
+          params: { icon: fa-solid fa-spell-check, description: Look up core data systems terms }
+        - identifier: indexes
+          parent: read
+          name: Index
+          pageRef: /indexes
+          weight: 30
+          params: { icon: fa-solid fa-arrow-down-a-z, description: Find topics across the book }
+        - identifier: colophon
+          parent: read
+          name: Colophon
+          pageRef: /colophon
+          weight: 40
+          params: { icon: fa-solid fa-feather-pointed, description: About the authors and the book }
 
 markup:
   goldmark:

@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch9
 title: "9. The Trouble with Distributed Systems"
 weight: 209
 breadcrumbs: false

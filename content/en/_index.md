@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-_index
 title: "Designing Data-Intensive Applications 2nd Edition"
 linkTitle: DDIA
 cascade:

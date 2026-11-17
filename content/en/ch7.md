@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch7
 title: "7. Sharding"
 weight: 207
 breadcrumbs: false

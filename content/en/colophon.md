@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-colophon
 title: Colophon
 weight: 600
 breadcrumbs: false

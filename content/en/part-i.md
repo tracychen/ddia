@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-part-i
 title: "PART I: Foundations of Data Systems"
 weight: 100
 breadcrumbs: false

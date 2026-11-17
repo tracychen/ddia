@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-indexes
 title: Indexes
 weight: 550
 breadcrumbs: false

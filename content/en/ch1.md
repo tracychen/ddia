@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch1
 title: "1. Trade-offs in Data Systems Architecture"
 weight: 101
 breadcrumbs: false

@@ -1,4 +1,5 @@
 ---
+translationKey: ddia-v2-ch4
 title: "4. Storage and Retrieval"
 weight: 104
 breadcrumbs: false
