@@ -1,0 +1,10 @@
+// Cloudflare Workers Builds runs the Hugo build, then `wrangler deploy`
+// serves the generated site as static assets.
+{
+  "name": "ddia",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
