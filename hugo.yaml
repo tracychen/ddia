@@ -6,10 +6,6 @@ enableRobotsTXT: true
 enableGitInfo: true
 hasCJKLanguage: true
 
-services:
-  googleAnalytics:
-    id: G-SGY2FPH1EG
-
 # OINK leaves generated surfaces to the consumer site. Markdown powers the
 # page actions, LLMS emits llms.txt, and print enables whole-book views.
 outputs:
@@ -34,7 +30,7 @@ languages:
       version: v2
       version_menu: 第二版
       versions:
-        - { name: 第二版, version: v2, url: 'https://ddia.vonng.com/' }
+        - { name: 第二版, version: v2, url: '/#' }
         - { name: 第一版, version: v1, url: '/v1/' }
       comments:
         giscus:
@@ -171,10 +167,10 @@ languages:
       description: DDIA 第一版中文翻译，涵盖可靠性、数据模型、存储、复制、分区、事务与派生数据。
       version: v1
       version_menu: 第一版
-      # The fragment keeps OINK from treating the site's base URL as active
-      # while this language site is serving the first edition.
+      # OINK trims a trailing slash and treats an empty URL as disabled; the
+      # fragment keeps the site root a live, host-independent link.
       versions:
-        - { name: 第二版, version: v2, url: 'https://ddia.vonng.com/#' }
+        - { name: 第二版, version: v2, url: '/#' }
         - { name: 第一版, version: v1, url: '/v1/' }
       comments:
         giscus:
@@ -313,10 +309,6 @@ languages:
       version_menu: 2nd Edition
       versions:
         - { name: 2nd Edition, version: v2, url: '/en/' }
-      # The English manuscript is not a translation; keep it out of the
-      # translation's giscus threads.
-      comments:
-        enable: false
       time_format_default: '2006-01-02'
       ui:
         command_palette:
@@ -427,8 +419,10 @@ params:
   reading_width: normal
   version_menu_pagelinks: false
 
+  # The giscus threads below belong to the upstream Vonng/ddia repository;
+  # this private deployment does not post into them.
   comments:
-    enable: true
+    enable: false
     type: giscus
     giscus:
       repo: Vonng/ddia
