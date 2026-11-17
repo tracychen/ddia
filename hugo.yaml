@@ -17,7 +17,10 @@ module:
   imports:
     - path: github.com/pgsty/oink
 
-defaultContentLanguage: zh
+defaultContentLanguage: en
+# The English manuscript links to its own pages as /en/…; keep it in its
+# subdirectory and let the site root redirect there.
+defaultContentLanguageInSubdir: true
 languages:
   zh:
     label: 简体 · 二版
@@ -30,7 +33,7 @@ languages:
       version: v2
       version_menu: 第二版
       versions:
-        - { name: 第二版, version: v2, url: '/#' }
+        - { name: 第二版, version: v2, url: '/zh/' }
         - { name: 第一版, version: v1, url: '/v1/' }
       comments:
         giscus:
@@ -167,10 +170,8 @@ languages:
       description: DDIA 第一版中文翻译，涵盖可靠性、数据模型、存储、复制、分区、事务与派生数据。
       version: v1
       version_menu: 第一版
-      # OINK trims a trailing slash and treats an empty URL as disabled; the
-      # fragment keeps the site root a live, host-independent link.
       versions:
-        - { name: 第二版, version: v2, url: '/#' }
+        - { name: 第二版, version: v2, url: '/zh/' }
         - { name: 第一版, version: v1, url: '/v1/' }
       comments:
         giscus:
@@ -403,7 +404,7 @@ params:
   github_project_repo: https://github.com/Vonng/ddia
   github_branch: main
   copyright:
-    authors: '[中文翻译贡献者](/contrib/) 与 DDIA 翻译贡献者'
+    authors: '[中文翻译贡献者](/zh/contrib/) 与 DDIA 翻译贡献者'
     from_year: 2017
     to_year: present
 
